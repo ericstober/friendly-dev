@@ -21,7 +21,34 @@ const AboutPage = () => {
       {/* Bio */}
       <div className='mb-12'>
         <h2 className='text-2xl font-semibold text-white mb-4'>My Mission</h2>
+        <p className='text-gray-300 leading-relaxed'>
+          After turning my life around, I made it my mission to share what I've learned with others - not just about
+          code, but about building a life you're proud of. Through tutorials, courses, and real-world projects, I aim to
+          make development accessible, friendly, and something you look forwards to each day.
+        </p>
       </div>
+
+      {/* Tech Stack */}
+      <h2 className='text-2xl font-semibold text-white mb-4'>🚀 Tech I Use</h2>
+      <ul className='flex flex-wrap gap-4 text-sm text-gray-300'>
+        {[
+          "React",
+          "Next.js",
+          "Vue",
+          "Tailwind CSS",
+          "Node.js",
+          "Laravel",
+          "Prisma",
+          "MongoDB",
+          "PostgreSQL",
+          "Appwrite",
+          "Docker",
+        ].map((tech) => (
+          <li key={tech} className='bg-gray-700 px-3 py-1 rounded-md'>
+            {tech}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
