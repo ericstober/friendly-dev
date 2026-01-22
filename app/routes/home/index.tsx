@@ -1,6 +1,7 @@
 import type { Route } from "./+types/index";
 import type { Project } from "~/types";
 import FeaturedProjects from "~/components/FeaturedProjects";
+import AboutPreview from "~/components/AboutPreview";
 
 export function meta({}: Route.MetaArgs) {
   return [{ title: "The Friendly Dev | Welcome" }, { name: "description", content: "Custom website development" }];
@@ -21,6 +22,7 @@ const HomePage = ({ loaderData }: Route.ComponentProps) => {
   return (
     <>
       <FeaturedProjects projects={projects} count={2} />
+      <AboutPreview />
     </>
   );
 };
