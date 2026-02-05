@@ -7,6 +7,8 @@ type FeaturedProjectsProps = {
 };
 
 const FeaturedProjects = ({ projects, count = 2 }: FeaturedProjectsProps) => {
+  if (projects.length === 0) return null;
+
   return (
     <section>
       <h2 className='text-2xl font-bold mb-6 text-gray-200'>Featured Projects</h2>
